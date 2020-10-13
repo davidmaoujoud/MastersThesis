@@ -1,0 +1,56 @@
+
+\chapter{Introduction}
+
+%\begin{chapquote}{Louis Bloom, \textit{Nightcrawler}}
+%``When it comes to your work reputation, you can’t unring the bell.''
+%\end{chapquote}
+
+\section{Context}
+
+
+
+Markov Decision Processes (MDPs) form a mathematical framework for single-agent decision-making in stochastic environments \cite{Russell:2009:AIM:1671238}. They are characterized by the possible states of an environment of interest, the actions this environment is subject to, its dynamics, and a reward scheme. Solving an MDP yields a policy that instructs the agent on how to behave in each situation. One could, by way of illustration, use this formalism to provide an agent of interest, say, a robot to be deployed in a maze (i.e., the environment), with an optimal way of finding its way out (i.e., a policy). The robot changes the state of the environment by applying actions to it, that is, by moving about in the maze. In addition, one may describe the robot's movements as unreliable, thereby adding an element of stochasticity to the problem; the robot could, for instance, occasionally move further than anticipated. The interactions between the agent and the environment shape the dynamics of the problem.
+
+Several extensions of the original framework have been proposed to accommodate for the presence of multiple agents. 
+Some of them, most notably Multi-agent MDPs (MMDPs) \cite{Boutilier} and Decentralized Partially Observable MDPs (Dec-POMDPs) \cite{decmdp, decmdp2}, operate under the assumption that the agents are selfless and have a common goal. Others, such as Interactive-POMDPs (I-POMDPs) \cite{ipomdp}, make no such assumptions, and are designed for each agent to adapt its behavior to its self-centered peers'.
+
+
+A primary concern when dealing with self-centered agents is that it makes multi-agent learning inherently more complex than single-agent learning \cite{nonstation, convergence}. This is, to a large extent, due to the fact that each agent needs to take into account the behavior of the entire network of agents when learning its own behavior. Additionally, agent behavior tends to be ever-changing. This \textit{non-stationarity} of agent behavior leads to the loss of policy \textit{convergence} properties that can often be found in single-agent formalisms \cite{convergence}. 
+
+
+The paper "\textit{Maximizing Expected Impact in an Agent Reputation Network}" published in 2018 by Rens et al. \cite{rensetal} proposes a mathematical framework called \textit{RepNet-POMDP} designed to handle domains in which an agent's reputation among other agents dictates its behavior. The framework builds on top of the MDP framework, by explicitly modeling agent behavior and reputation, as well as introducing partial observability of the environment and other agents' behavior. 
+
+Understanding decision-making in the face of selfishness plays an important role in several domains and is notably the subject of \textit{game theory} \cite{repp}. A simple trading scenario can serve as an illustrative example. Let two agents constitute the two parties involved in a trade transaction. The first agent, called the buyer, wishes to buy a good offered by the second agent, called the seller. The seller is at no point forced to accept the trade offer: in fact, if the buyer is known to have a poor reputation, the seller might prefer to refuse the trade offer to steer clear of any interactions with the buyer. The reputation of the buyer shapes the dynamics of the interactions between both agents.
+
+A second and more complex example in which an agent's reputation plays a key role revolves around the topic of Electric Vertical Take-off and Landing aircraft \cite{vtol}. In this illustrative example, these pilotless aircraft make up a network of agents that require air traffic management.
+The example furthermore involves a set of vertiports that the aircraft can land on to recharge their batteries. The aircraft are to carry passengers from one vertiport to another. Say a first air-taxi is currently charging its battery while a second one is in the air waiting for the vertiport to free up. As the second aircraft's battery reaches lower levels, it must either fly to another nearby vertiport or trust the first aircraft to leave. This decision is to be made based on the first aircraft's past behavior and reputation.
+
+The RepNet framework is tailored to problems alike and constitutes the subject of the present thesis. In their paper, \textit{Rens et al.} provide the theoretical foundation of the framework, which introduces several concepts that distinguish it from other MDP-derived frameworks. As such, the notions of \textit{action distribution}, \textit{image}, \textit{reputation}, and \textit{directed actions} are established as key components of the framework, and are used by RepNet agents to navigate through the environment and interact with the other agents that are apart of the environment. While these concepts were developed on a theoretical level, the framework itself was not evaluated empirically.
+
+\paragraph{Problem statement:} \textit{The primary goal of the present thesis is to study the properties of the RepNet framework, and evaluate its viability as an MDP-derived, multi-agent framework that deals with agent selfishness. Finding exact solutions for RepNet-POMDPs is, however, known to be computationally \textit{intractable}. The intractability of the framework is to be alleviated before the framework and its properties can be tested.}
+
+\paragraph*{}The study of the framework's properties can be further refined into four research questions, which will be answered in this thesis.
+
+\paragraph{Research question 1:} \textit{Are the concepts of action distribution, image, and reputation effective in practice?}
+
+\paragraph{Research question 2:} \textit{Is the concept of directed actions effective in practice?}
+
+\paragraph{Research question 3:} \textit{Are RepNet agents capable of drawing general conclusions on the interactions between the agents that are apart of the environment?}
+
+\paragraph{Research question 4:} \textit{Are RepNet agents capable of being cooperative in spite of their selfish intentions?}
+
+
+
+
+
+
+\paragraph*{}Broadly speaking, the work carried out in regards to the RepNet framework involves a first part of \textit{theoretical}, and a second part of \textit{experimental}, nature.
+
+\paragraph*{\textit{Theoretical part:}} The approach taken in this thesis to alleviate the problem of intractability can be summarized as a two-step procedure: the first step consists in reducing the framework to a fully observable setting called RepNet-MDP. The second step consists in favoring approximate solutions to the reduced framework of satisfactory quality over exact solutions. An algorithm for finding approximate solutions will be presented to this end.
+
+\paragraph*{\textit{Experimental part:}} After reducing the framework's intractability, the viability of said framework will be evaluated in a series of simplified scenarios drawn from the \textit{trading} and \textit{air-taxi} domains. Each scenario will be tailored to showcase the strengths and shortcomings of the framework.
+
+
+
+\section{Outline}
+This thesis is structured in the following way: \RefChap{chap:background} summarizes the relevant background required. \RefChap{chap:related} provides an overview of the related work and, in particular, the framework proposed by \textit{Rens et al.} \cite{rensetal}. \RefChap{chap:mdp} then discusses the reduction of the starting framework to a fully observable setting. The experimental setup of the reduced framework is given in \RefChap{chap:method}. \RefChap{chap:res} provides the experimental results and discusses the strengths and shortcomings of the RepNet framework. Finally, the work of the previous chapters is brought together and summarized in \RefChap{chap:conclusion}.

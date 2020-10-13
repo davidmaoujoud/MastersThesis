@@ -1,0 +1,57 @@
+\chapter{Conclusion}
+\label{chap:conclusion}
+This thesis has examined the viability of a multi-agent extension to the POMDP framework called RepNet, and first introduced by \textit{Rens et al.} \cite{rensetal}. In this chapter the main findings are summarized, the research questions are briefly reviewed, and future work is suggested.
+\section{Thesis summary}
+In \RefChap{chap:background}, the relevant background for the thesis was summarized. In particular, Markov Decision Processes and their extension to partially observable environments were presented. The well-known \textit{Value Iteration} algorithm was then reviewed for both frameworks. Lastly, several online and offline solving techniques for these frameworks were discussed.
+
+In \RefChap{chap:related}, the previous work closely tied to this thesis was presented. Early multi-agent MDP extensions, namely Multi-agent MDPs (MMDPs) and Decentralized POMDPs (Dec-POMDPs) were first summarized. These frameworks deal with situations in which selfishness is not considered an issue. A first multi-agent, MDP-derived framework in which selfishness is explicitly dealt with, namely the interactive POMDP (I-POMDP) framework, was then discussed. Finally the framework of interest, called RepNet-POMDP and published by \textit{Rens et al.} \cite{rensetal}, was summarized. This chapter ends with a few identified issues of the initial RepNet framework.
+
+In \RefChap{chap:mdp}, the reduction of the RepNet-POMDP framework to a fully observable setting called RepNet-MDP was first presented. The goal of the reduction resided in the alleviation of the intractability of exact planning. Solutions to the issues mentioned in the previous chapter were then elaborated on. Finally, online planning was introduced in the context of RepNet-MDPs in an effort to further reduce the computational requirements of the framework.
+
+In \RefChap{chap:method}, the testing methodology and scenarios were explained in detail. The test bed consists of examples taken from two domains, namely the trading and air-taxi domains. The experiments were constructed around those scenarios with the intent of showcasing the strengths and shortcomings of the RepNet framework. 
+
+
+In \RefChap{chap:res}, the results of the experimental setup were presented and discussed. In particular, the adaptability of RepNet agents was tested under different conditions. While the agents showed to be capable of adapting to situations that directly affected them, they were unable to draw conclusions on behavior from other agents that did not directly concern them.
+\section{Review of the research questions}
+\paragraph{Research question 1:} \textit{Are the concepts of action distribution, image, and reputation effective in practice?}
+
+\noindent The notions of \textit{action distribution}, \textit{image}, and \textit{reputation} were shown to allow RepNet agents to effectively monitor other agents' past behavior and reliability, and draw sound conclusions on the best course of action in cases where the RepNet agents were directly affected by the other agents' behavior.
+
+\paragraph{Research question 2:} \textit{Is the concept of directed actions effective in practice?}
+
+\noindent The concept of \textit{directed actions}, as is was imagined by \textit{Rens et al.}, was shown to be unable to describe the rules of the environment in which the RepNet agents are deployed. An alternative to this concept, in which directed transitions are defined to explain the RepNet agent's \textit{subjective} impression of the impact its reputation has on the interactions with other agents, was proposed. The reimagined concept of directed actions proved to improve the adaptability of the RepNet agents, provided that the directed transition models were designed so as to realistically reflect the extent to which the RepNet agents' reputation affects their ability to communicate with other agents.
+
+\paragraph{Research question 3:} \textit{Are RepNet agents capable of drawing general conclusions on the interactions between the agents that are apart of the environment?}
+
+\noindent The current version of the RepNet framework makes it impossible for a RepNet agent to adapt its behavior in the event of interactions that it is not directed affected by, even when these interactions are indicative of a given agent's poor intentions.
+
+\paragraph{Research question 4:} \textit{Are RepNet agents capable of being cooperative in spite of their selfish intentions?}
+
+\noindent Properly tuned RepNet agents were shown to be able to sacrifice their most selfish intentions in an effort to maintain a general level of well-being of the network. In particular, a network of 3 RepNet agents was shown to be able to find common ground in the face of uncertainty and selfishness from a fourth party.
+
+\section{Limitations and future work}
+This section discusses the limitations of this thesis, and provides suggestions for future work.
+
+The current definition of \textit{directed} transitions could be extended to incorporate the reputation of agents other than the RepNet agent. In fact, the experimental results showed that the RepNet agent is incapable of adapting its behavior to situations which it is not directly affected by. 
+Including the reputation of the agent at the receiving end of a directed action in the \textit{directed} transition model
+is likely to lead to better-informed decision-making, provided that the \textit{directed} transition model is designed so as to realistically reflect the impact that the receiving agent's reputation has on the outcome of the interaction.
+
+
+To reduce the intractability of the framework, the framework was reduced to a fully observable setting. As many real-world problems do not benefit from full observability, it would be interesting to bring the RepNet framework, together with the corrections made, back to a partially observable setting.
+
+Several techniques for speeding up computations can be added to the look-ahead algorithm. While this thesis did not focus on the performance gains that could be achieved while still offering the same quality of solutions, it should be noted that the number of tests conducted was limited by the time taken by each experiment. Simple pruning techniques would help in alleviating the computational requirements.
+
+%The current mathematical definition of reputation, while arguably simple to understand, does make room for potential strange behavior from RepNet agents. In particular, situations in which a RepNet agent should clearly not believe to have a good reputation can appear in some circumstances. 
+
+While the features and adaptability of the RepNet framework were rigorously tested on their own, a comparative analysis of the performances of several state-of-the-art algorithms may have to be conducted in the future. However, as it currently stands, much MDP-derived research has shifted towards model-free solutions, as real-world problems can easily become too difficult for transition models to be designed by any one person. In fact, the state space of an environment grows exponentially with the number of domain features \cite{bout2}. A sub-branch of MAL has experienced a jump in popularity when \textit{DeepMind} released the paper "\textit{Playing Atari with Deep Reinforcement Learning}", in which they use \textit{deep learning} on a convolutional neural network to approximate the \textit{function} of the environment \cite{DQN}. A potentially interesting direction in which further research could be conducted is the development of a \textit{hybrid} framework in which the transition model is learned through trial and error using state-of-the-art (\textit{neural network}-based) techniques (model-free part), and in which the concepts of action distribution, image, and reputation assist the agent in its decision-making process (RepNet part).
+
+
+
+
+Alternatively, an interesting way in which one could keep the model-based nature of the current RepNet framework and use it to solve real-world problems consists in introducing elements of relational logic. In 2001, \textit{Boutilier et al.} \cite{bout2} introduced relational MDPs (RMDPs). From a \textit{logic programming} point of view, a state space is hereby defined by a collection of relations, while a state is an \textit{interpretation} of this collection \cite{relationallogic}. Transition models and reward schemes are then represented by \textit{probabilistic rules} \cite{Nitti2017}.
+
+
+
+
+
+Finally, \RefSec{sub:largetaxi} provided early results of the convergence properties of RepNet agents. The topic of convergence in Multi-agent learning is significantly more complex than can be summarized in a single experiment. An interesting direction for future research could include the study of the convergence properties of the RepNet framework.

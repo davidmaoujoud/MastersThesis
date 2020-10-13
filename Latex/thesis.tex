@@ -1,0 +1,267 @@
+\documentclass[master=ecws,masteroption=ai,acyear=2019 -- 2020]{kulemt}
+\setup{% Remove the "%" on the next line when using UTF-8 character encoding
+  %inputenc=utf8,
+  title={Reputation-driven Decision-making in Networks of Stochastic Agents},
+  author={David Maoujoud},
+  promotor={Prof.\,dr.\ L. De Raedt \and Dr.\ G. Rens},
+  assessor={Prof.\,dr.\ M. Denecker\and Dr. \ F. Yang},
+  assistant={Dr.\ G. Rens}}
+% Remove the "%" on the next line for generating the cover page
+%\setup{coverpageonly}
+% Remove the "%" before the next "\setup" to generate only the first pages
+% (e.g., if you are a Word user).
+%\setup{frontpagesonly}
+
+% Choose the main text font (e.g., Latin Modern)
+\setup{font=lm}
+
+% If you want to include other LaTeX packages, do it here. 
+
+% Finally the hyperref package is used for pdf files.
+% This can be commented out for printed versions.
+%\usepackage[pdfusetitle,colorlinks,plainpages=false]{hyperref}
+\usepackage[pdfusetitle,plainpages=false]{hyperref}
+
+%%%%%%%
+% The lipsum package is used to generate random text.
+% You never need this in a real master's thesis text!
+\IfFileExists{lipsum.sty}%
+ {\usepackage{lipsum}\setlipsumdefault{11-13}}%
+ {\newcommand{\lipsum}[1][11-13]{\par And some text: lipsum ##1.\par}}
+%%%%%%%
+
+
+
+
+
+
+
+
+
+
+
+%\usepackage{a4wide}
+%\usepackage[a4paper]{geometry}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{url}
+
+\newcommand{\RefVgl}[1]{~\textup{(\ref{#1})}} % using non breaking space, so use as\RefVgl{eq:foo}
+\newcommand{\RefFig}[1]{Figure~\textup{\ref{#1}}}
+\newcommand{\RefTab}[1]{Table~\textup{\ref{#1}}}
+\newcommand{\RefSec}[1]{Section~\textup{\ref{#1}}}
+\newcommand{\RefChap}[1]{Chapter~\textup{\ref{#1}}}
+\newcommand{\RefThe}[1]{Theorem~\textup{\ref{#1}}}
+\newcommand{\RefLem}[1]{Lemma~\textup{\ref{#1}}}
+\newcommand{\RefGev}[1]{Corollary~\textup{\ref{#1}}}
+\newcommand{\RefDef}[1]{Definition~\textup{\ref{#1}}}
+\newcommand{\RefAlg}[1]{Algorithm~\textup{\ref{#1}}}
+
+\newcommand{\RefEx}[1]{Example~\textup{\ref{#1}}}
+
+\usepackage{amsmath,amsfonts,amsthm}
+\usepackage{mathtools}
+
+\bibliographystyle{vancouver}
+
+\usepackage{subfig}
+
+
+\usepackage{pgfplots}  
+%\usepackage{SIunits} 
+\pgfplotsset{compat=newest}
+
+
+
+
+\usepackage{filecontents}
+\usepackage{pgfplots, pgfplotstable}
+\usepgfplotslibrary{statistics}
+
+\usepackage{rotating,booktabs,multirow}
+
+\usepackage{amssymb}
+
+
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+
+\makeatletter
+\def\BState{\State\hskip-\ALG@thistlm}
+\makeatother
+
+\theoremstyle{plain}
+  \newtheorem{theorem}{Theorem}[chapter]
+  \newtheorem{lemma}[theorem]{Lemma}
+  \newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{plain}
+  \newtheorem{definition}[theorem]{Definition}
+  \newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+  \newtheorem*{remark}{Remark}
+
+\newcommand{\field}[1]{\mathbb{#1}} % the font for a mathematical field is blackboard
+\newcommand{\R}{\field{R}} % the field of the reals
+\newcommand{\N}{\field{N}} % the field of the natural numbers
+\newcommand{\C}{\field{C}} % the field of complex number
+\newcommand{\Z}{\field{Z}} % the field of integers
+\newcommand{\E}{\field{E}}
+
+\renewcommand{\vec}[1]{\boldsymbol{#1}} % vectors in bold instead of with an arrow on top
+\newcommand{\convolution}{\ast} % convolution
+\DeclareMathOperator{\diag}{diag}
+
+
+\usepackage{xcolor}
+\usepackage[intoc]{nomencl}  
+\makenomenclature
+\usepackage{xstring}
+\usepackage{xstring}
+\usepackage{xpatch}
+\patchcmd{\thenomenclature}
+  {\leftmargin\labelwidth}
+  {\leftmargin\labelwidth\itemindent 1em }
+  {}{}
+\newcommand{\nomenclheader}[1]{
+  \item[\hspace*{-\itemindent}\normalfont\bfseries#1]}
+\renewcommand\nomgroup[1]{
+  \IfStrEqCase{#1}{
+   {A}{\nomenclheader{Acronyms}}
+   {S}{\nomenclheader{Symbols}}
+   {N}{\nomenclheader{Notation}}
+  }
+} 
+
+\nomenclature[A]{MAS}{Multi-agent System}
+\nomenclature[A]{MDP}{Markov Decision Process}
+\nomenclature[A]{POMDP}{Partially Observable Markov Decision Process}
+\nomenclature[A]{SARL}{Single-agent Reinforcement Learning}
+\nomenclature[A]{SAL}{Single-agent Learning}
+\nomenclature[A]{MARL}{Multi-agent Reinforcement Learning}
+\nomenclature[A]{RL}{Reinforcement Learning}
+\nomenclature[A]{VI}{Value iteration}
+\nomenclature[A]{eVTOL}{Electric Vertical Take-off and Landing}
+\nomenclature[A]{MAL}{Multi-agent Learning}
+
+\nomenclature[N]{$e'$}{Value of $e$ at the following time-step}
+\nomenclature[N]{$\mathcal{E}$}{Finite set of elements}
+\nomenclature[N]{$\lvert \mathcal{E} \rvert$}{Cardinality of $\mathcal{E}$}
+
+\nomenclature[N]{$\Delta (\mathcal{E})$}{Set of probability distributions over the elements of $\mathcal{E}$}
+
+
+\nomenclature[N]{$\sum_{e}$}{Shorthand notation for $\sum_{e \in \mathcal{E}}$}
+
+\nomenclature[N]{$\{X_g\}$}{Shorthand notation for $\{X_g \,\,\lvert\,\, g \in \mathcal{G}\}$}
+
+\nomenclature[N]{$\mathcal{A} \oplus \mathcal{B}$}{Cross-sum of vectors $\mathcal{A}$ and $\mathcal{B}$, defined as $\{ a + b \,\,\lvert \,\, a \in \mathcal{A} \land b \in \mathcal{B} \}$}
+
+\makeatletter
+\newenvironment{chapquote}[2][2em]
+  {\setlength{\@tempdima}{#1}%
+   \def\chapquote@author{#2}%
+   \parshape 1 \@tempdima \dimexpr\textwidth-2\@tempdima\relax%
+   \itshape}
+  {\par\normalfont\hfill--\ \chapquote@author\hspace*{\@tempdima}\par\bigskip}
+\makeatother
+
+
+
+
+
+
+
+
+%\includeonly{chap-n}
+\begin{document}
+
+\tableofcontents*
+
+\begin{abstract}
+This thesis studies multi-agent systems that involve networks of self-interested agents. In 2018, \textit{Rens et al.} \cite{rensetal} developed a Markov Decision Process-derived framework, called RepNet-POMDP, tailored to domains in which agent reputation is a key driver of the interactions between agents. The theoretical foundation of the framework was provided; the framework itself was, however, subsequently left unimplemented. 
+
+\noindent Due to the highly intractable nature of its exact planning algorithm, we first reduce the framework to its fully observable equivalent, called RepNet-MDP, in an effort to study the framework's properties more efficiently. We further alleviate the intractability of the framework by devising an algorithm for finding approximate solutions. We show that the concept of \textit{directed actions}, as introduced by \textit{Rens et al.}, is subject to several theoretical inconsistencies, and propose an alternative interpretation of this concept that retains its core characteristics. We furthermore demonstrate that the initial notion of \textit{action distribution} can lead to undesirable agent behavior, and provide a revised formulation of the concept.
+
+\noindent The viability of the framework is tested in a series of experiments designed to highlight its strengths and shortcomings. The tests display the RepNet agents' ability to leverage the framework's fundamental properties in an effort to adapt their behavior to the past behavior and reliability of the remaining agents of the network. RepNet agents are furthermore shown to be willing to sacrifice their selfish intentions in an attempt to maintain a general level of well-being of the entire network. Finally, our work identifies a limitation of the framework in its current formulation that prevents its agents from learning in circumstances in which they are not a primary actor.
+\end{abstract}
+
+% A list of figures and tables is optional
+%\listoffigures
+%\listoftables
+% If you only have a few figures and tables you can use the following instead
+\listoffiguresandtables
+% The list of symbols is also optional.
+% This list must be created manually, e.g., as follows:
+\chapter{List of Abbreviations and Symbols}
+\section*{Abbreviations}
+\begin{flushleft}
+  \renewcommand{\arraystretch}{1.1}
+  \begin{tabularx}{\textwidth}{@{}p{12mm}X@{}}
+    MAS   & Multi-agent System \\
+    MDP   & Markov Decision Process \\
+    POMDP  & Partially Observable Markov Decision Process \\
+    SARL  & Single-agent Reinforcement Learning \\
+    SAL  & Single-agent Learning \\
+    MARL  & Multi-agent Reinforcement Learning \\
+    MAL  & Multi-agent Learning \\
+    RL  & Reinforcement Learning \\
+    VI  & Value iteration \\
+    eVTOL  & Electric Vertical Take-off and Landing \\
+  \end{tabularx}
+\end{flushleft}
+\section*{Symbols}
+\begin{flushleft}
+  \renewcommand{\arraystretch}{1.1}
+  \begin{tabularx}{\textwidth}{@{}p{12mm}X@{}}
+    $e'$    & Value of $e$ at the following time-step \\
+    $\mathcal{E}$   & Finite set of elements \\
+    $\lvert \mathcal{E} \rvert$   & Cardinality of $\mathcal{E}$ \\
+    $\Delta (\mathcal{E})$   & Set of probability distributions over the elements of $\mathcal{E}$ \\
+    $\sum_{e}$ & Shorthand notation for $\sum_{e \in \mathcal{E}}$ \\
+    $\{X_g\}$ & Shorthand notation for $\{X_g \,\,\lvert\,\, g \in \mathcal{G}\}$ \\
+    $\mathcal{A} \oplus \mathcal{B}$ & Cross-sum of vectors $\mathcal{A}$ and $\mathcal{B}$, defined as $\{ a + b \,\,\lvert \,\, a \in \mathcal{A} \land b \in \mathcal{B} \}$ \\
+    $\alpha$ & Learning rate\\
+    $\gamma$ & Discount factor \\
+    $\epsilon$ & Exploration-exploitation trade-off parameter \\
+    $\eta$ & Laplace smoothing parameter\\
+    $D$ & Look-ahead depth \\
+    
+  \end{tabularx}
+\end{flushleft}
+
+
+
+
+
+
+
+
+
+% Now comes the main text
+\mainmatter
+
+
+\include{introduction}
+\include{background}
+\include{related}
+\include{repnetmdp}
+\include{methodology}
+\include{results}
+\include{conclusion}
+
+% If you have appendices:
+%\appendixpage*          % if wanted
+%\appendix
+%\include{app-A}
+\backmatter
+% The bibliography comes after the appendices.
+% You can replace the standard "abbrv" bibliography style by another one.
+\bibliographystyle{abbrv}
+\bibliography{references}
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

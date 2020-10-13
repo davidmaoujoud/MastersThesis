@@ -1,0 +1,170 @@
+\documentclass[a4paper,11pt]{report}
+
+%\usepackage{a4wide}
+\usepackage[a4paper]{geometry}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{url}
+
+\newcommand{\RefVgl}[1]{~\textup{(\ref{#1})}} % using non breaking space, so use as\RefVgl{eq:foo}
+\newcommand{\RefFig}[1]{Figure~\textup{\ref{#1}}}
+\newcommand{\RefTab}[1]{Table~\textup{\ref{#1}}}
+\newcommand{\RefSec}[1]{Section~\textup{\ref{#1}}}
+\newcommand{\RefChap}[1]{Chapter~\textup{\ref{#1}}}
+\newcommand{\RefThe}[1]{Theorem~\textup{\ref{#1}}}
+\newcommand{\RefLem}[1]{Lemma~\textup{\ref{#1}}}
+\newcommand{\RefGev}[1]{Corollary~\textup{\ref{#1}}}
+\newcommand{\RefDef}[1]{Definition~\textup{\ref{#1}}}
+\newcommand{\RefAlg}[1]{Algorithm~\textup{\ref{#1}}}
+
+\newcommand{\RefEx}[1]{Example~\textup{\ref{#1}}}
+
+\usepackage{amsmath,amsfonts,amsthm}
+\usepackage{mathtools}
+
+\bibliographystyle{vancouver}
+
+\usepackage{subfig}
+
+
+\usepackage{pgfplots}  
+%\usepackage{SIunits} 
+\pgfplotsset{compat=newest}
+
+
+
+
+\usepackage{filecontents}
+\usepackage{pgfplots, pgfplotstable}
+\usepgfplotslibrary{statistics}
+\begin{filecontents}{data.csv}
+dist
+1
+2
+2.5
+2
+1
+3.5
+3
+1
+3
+2
+1
+1
+0.5
+1
+1.5
+1
+\end{filecontents}
+
+
+
+
+
+
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+
+\makeatletter
+\def\BState{\State\hskip-\ALG@thistlm}
+\makeatother
+
+\theoremstyle{plain}
+  \newtheorem{theorem}{Theorem}[chapter]
+  \newtheorem{lemma}[theorem]{Lemma}
+  \newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{plain}
+  \newtheorem{definition}[theorem]{Definition}
+  \newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+  \newtheorem*{remark}{Remark}
+
+\newcommand{\field}[1]{\mathbb{#1}} % the font for a mathematical field is blackboard
+\newcommand{\R}{\field{R}} % the field of the reals
+\newcommand{\N}{\field{N}} % the field of the natural numbers
+\newcommand{\C}{\field{C}} % the field of complex number
+\newcommand{\Z}{\field{Z}} % the field of integers
+\newcommand{\E}{\field{E}}
+
+\renewcommand{\vec}[1]{\boldsymbol{#1}} % vectors in bold instead of with an arrow on top
+\newcommand{\convolution}{\ast} % convolution
+\DeclareMathOperator{\diag}{diag}
+
+
+\usepackage{xcolor}
+\usepackage[intoc]{nomencl}  
+\makenomenclature
+\usepackage{xstring}
+\usepackage{xstring}
+\usepackage{xpatch}
+\patchcmd{\thenomenclature}
+  {\leftmargin\labelwidth}
+  {\leftmargin\labelwidth\itemindent 1em }
+  {}{}
+\newcommand{\nomenclheader}[1]{
+  \item[\hspace*{-\itemindent}\normalfont\bfseries#1]}
+\renewcommand\nomgroup[1]{
+  \IfStrEqCase{#1}{
+   {A}{\nomenclheader{Acronyms}}
+   {S}{\nomenclheader{Symbols}}
+   {N}{\nomenclheader{Notation}}
+  }
+} 
+
+\nomenclature[A]{MAS}{Multi-agent System}
+\nomenclature[A]{MDP}{Markov Decision Process}
+\nomenclature[A]{POMDP}{Partially Observable Markov Decision Process}
+\nomenclature[A]{SARL}{Single-agent Reinforcement Learning}
+\nomenclature[A]{SAL}{Single-agent Learning}
+\nomenclature[A]{MARL}{Multi-agent Reinforcement Learning}
+\nomenclature[A]{RL}{Reinforcement Learning}
+\nomenclature[A]{VI}{Value iteration}
+\nomenclature[A]{eVTOL}{Electric Vertical Take-off and Landing}
+\nomenclature[A]{MAL}{Multi-agent Learning}
+
+\nomenclature[N]{$e'$}{Value of $e$ at the following time-step}
+\nomenclature[N]{$\mathcal{E}$}{Finite set of elements}
+\nomenclature[N]{$\lvert \mathcal{E} \rvert$}{Cardinality of $\mathcal{E}$}
+
+\nomenclature[N]{$\Delta (\mathcal{E})$}{Set of probability distributions over the elements of $\mathcal{E}$}
+
+
+\nomenclature[N]{$\sum_{e}$}{Shorthand notation for $\sum_{e \in \mathcal{E}}$}
+
+\nomenclature[N]{$\{X_g\}$}{Shorthand notation for $\{X_g \,\,\lvert\,\, g \in \mathcal{G}\}$}
+
+\nomenclature[N]{$\mathcal{A} \oplus \mathcal{B}$}{Cross-sum of vectors $\mathcal{A}$ and $\mathcal{B}$, defined as $\{ a + b \,\,\lvert \,\, a \in \mathcal{A} \land b \in \mathcal{B} \}$}
+
+\makeatletter
+\newenvironment{chapquote}[2][2em]
+  {\setlength{\@tempdima}{#1}%
+   \def\chapquote@author{#2}%
+   \parshape 1 \@tempdima \dimexpr\textwidth-2\@tempdima\relax%
+   \itshape}
+  {\par\normalfont\hfill--\ \chapquote@author\hspace*{\@tempdima}\par\bigskip}
+\makeatother
+
+\begin{document}
+
+\tableofcontents
+	
+\printnomenclature[2.5cm]
+
+\input{introduction}
+\newpage
+\input{background}
+\newpage
+\input{related}
+\newpage
+\input{repnetmdp}
+\newpage
+\input{methodology}
+\newpage
+\input{results}
+\newpage
+\input{conclusion}
+\newpage
+
+\bibliography{biblio}
+
+\end{document}
