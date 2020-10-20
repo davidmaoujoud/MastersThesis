@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5eed35e8-2af2-4e7a-849e-07006ce038cd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/MDPParameters/MDPParameters-AgentABCTrade.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/MDPParameters/MDPParameters-AgentABTrade.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/MDPParameters/MDPParameters-AgentABTradeNewVersion.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/MDPParameters/MDPParametersVTOL.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/MDPParameters/MDPParametersVTOL2agents1helipad.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/MDPParameters/MDPParametersVTOL3agents2helipads.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/MDPParameters/MDPParametersVTOL4agentsTravel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/.idea/RepNet-MDP.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/.idea/libraries/R_User_Library.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/Agent.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/CSV/tradeABCQ.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/CSV/tradeABCacceptB.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/CSV/tradeABCacceptC.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/CSV/tradeABCactiontaken.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/CSV/tradeABCrepB.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/CSV/tradeABCrepC.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/CSV/tradeABQ.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/CSV/tradeABaccept2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/CSV/tradeABaccept3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/CSV/tradeABfreq.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/CSV/tradeABimgAB.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/CSV/tradeABimgBA.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/CSV/tradeABrefuse2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/CSV/tradeABrefuse3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/CSV/tradeABrepA.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/CSV/tradeABrepB.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/CSV/vtol2crashes.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/CSV/vtol2crashesmdp.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/CSV/vtol2timespent.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/CSV/vtol2timespentmdp.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/CSV/vtol2timespentright.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/CSV/vtol2timespentrightmdp.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/CSV/vtol4crashes.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/CSV/vtol4wins.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/MDPAgent.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/MDPParameters.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/MDPTree.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/Main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/Oracle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/QLearner.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/RepNetAgent.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/RepNetMDP.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/RepNetTree.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RepNet-MDP/RepNet-MDP/System.py" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/RepNet_MDP$Main.coverage" NAME="Main Coverage Results" MODIFIED="1603193042773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RepNet_MDP$MDPParameters.coverage" NAME="MDPParameters Coverage Results" MODIFIED="1570719621413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Experiments/Trade2Agents.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="159" selection-start-line="5" selection-start-column="159" selection-end-line="5" selection-end-column="159" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Experiments/Trade3Agents.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="159" selection-start-line="5" selection-start-column="159" selection-end-line="5" selection-end-column="159" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>system.i</find>
+      <find>ut</find>
+      <find>.ut</find>
+      <find>.t</find>
+      <find>actions_</find>
+      <find>.dt</find>
+      <find>eti</find>
+      <find>print</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/MDPParametersVTOL.py" />
+        <option value="$PROJECT_DIR$/MDPParametersVTOL3agents2helipads.py" />
+        <option value="$PROJECT_DIR$/MDPParameters-AgentABTrade.py" />
+        <option value="$PROJECT_DIR$/ResultsStates/Agent.py" />
+        <option value="$PROJECT_DIR$/MDPTree.py" />
+        <option value="$PROJECT_DIR$/CSV/tradeABaccept2.csv" />
+        <option value="$PROJECT_DIR$/CSV/tradeABaccept3.csv" />
+        <option value="$PROJECT_DIR$/CSV/tradeABimgAB.csv" />
+        <option value="$PROJECT_DIR$/CSV/tradeABimgBA.csv" />
+        <option value="$PROJECT_DIR$/CSV/tradeABrefuse2.csv" />
+        <option value="$PROJECT_DIR$/CSV/tradeABrefuse3.csv" />
+        <option value="$PROJECT_DIR$/CSV/tradeABrepA.csv" />
+        <option value="$PROJECT_DIR$/CSV/tradeABrepB.csv" />
+        <option value="$PROJECT_DIR$/CSV/vtol2crashes.csv" />
+        <option value="$PROJECT_DIR$/CSV/vtol2timespent.csv" />
+        <option value="$PROJECT_DIR$/CSV/vtol2timespentright.csv" />
+        <option value="$PROJECT_DIR$/MDPParametersVTOL2agents1helipad.py" />
+        <option value="$PROJECT_DIR$/MDPParameters-AgentABCTrade.py" />
+        <option value="$PROJECT_DIR$/MDPParametersVTOL4agentsTravel.py" />
+        <option value="$PROJECT_DIR$/MDPParameters-AgentABTradeNewVersion.py" />
+        <option value="$PROJECT_DIR$/MDPParameters.py" />
+        <option value="$PROJECT_DIR$/Experiments/Test.py" />
+        <option value="$PROJECT_DIR$/Experiments/MDPParameters.py" />
+        <option value="$PROJECT_DIR$/RepNetMDP.py" />
+        <option value="$PROJECT_DIR$/Oracle.py" />
+        <option value="$PROJECT_DIR$/Agent.py" />
+        <option value="$PROJECT_DIR$/Oracle2Agents.py" />
+        <option value="$PROJECT_DIR$/Oracle3Agents.py" />
+        <option value="$PROJECT_DIR$/QLearner.py" />
+        <option value="$PROJECT_DIR$/MDPAgent.py" />
+        <option value="$PROJECT_DIR$/RepNetAgent.py" />
+        <option value="$PROJECT_DIR$/System.py" />
+        <option value="$PROJECT_DIR$/OnlineSolver.py" />
+        <option value="$PROJECT_DIR$/Experiments/Trade3Agents.py" />
+        <option value="$PROJECT_DIR$/Experiments/Trade2Agents.py" />
+        <option value="$PROJECT_DIR$/Main.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-3" />
+    <option name="y" value="-33" />
+    <option name="width" value="1944" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectId" id="1ZBn6zDDd7JitOWMb6uZ92gmUiO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="RepNet-MDP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RepNet-MDP" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RepNet-MDP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RepNet-MDP" type="462c0819:PsiDirectoryNode" />
+              <item name="CSV" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RepNet-MDP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RepNet-MDP" type="462c0819:PsiDirectoryNode" />
+              <item name="Experiments" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\david\OneDrive\Documents\University\Public\MastersThesis\RepNet-MDP_Paper\RepNet-MDP" />
+      <recent name="C:\Users\david\OneDrive\Documents\University\Public\MastersThesis\RepNet-MDP_Paper\RepNet-MDP\Experiments" />
+      <recent name="C:\Users\david\OneDrive\Documents\University\KULeuven\MastersThesis\RepNet-MDP\RepNet-MDP\CSV" />
+      <recent name="C:\Users\david\OneDrive\Documents\University\KULeuven\MastersThesis\RepNet-MDP\RepNet-MDP" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\david\OneDrive\Documents\University\KULeuven\MastersThesis\RepNet-MDP\RepNet-MDP" />
+      <recent name="C:\Users\david\OneDrive\Documents\University\KULeuven\MastersThesis\RepNet-MDP\RepNet-MDP\ResultsStates" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.Main">
+    <configuration name="MDPParameters" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="RepNet-MDP" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MDPParameters.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="RepNet-MDP" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Main" />
+        <item itemvalue="Python.MDPParameters" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5eed35e8-2af2-4e7a-849e-07006ce038cd" name="Default Changelist" comment="" />
+      <created>1570716472874</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570716472874</updated>
+      <workItem from="1570716476328" duration="20459000" />
+      <workItem from="1575990480085" duration="27756000" />
+      <workItem from="1579088144973" duration="183000" />
+      <workItem from="1580684413574" duration="23924000" />
+      <workItem from="1581431628899" duration="51836000" />
+      <workItem from="1582050013118" duration="34328000" />
+      <workItem from="1584321185760" duration="33295000" />
+      <workItem from="1584915752938" duration="10651000" />
+      <workItem from="1585013851445" duration="4317000" />
+      <workItem from="1585413094783" duration="607000" />
+      <workItem from="1585929071184" duration="297000" />
+      <workItem from="1586110519914" duration="6841000" />
+      <workItem from="1586204315709" duration="52000" />
+      <workItem from="1587417008379" duration="43462000" />
+      <workItem from="1587999623434" duration="223061000" />
+      <workItem from="1589662703896" duration="29000" />
+      <workItem from="1590049582348" duration="1333000" />
+      <workItem from="1590087544190" duration="34000" />
+      <workItem from="1590229877534" duration="2822000" />
+      <workItem from="1590688924128" duration="16445000" />
+      <workItem from="1600894365153" duration="142000" />
+      <workItem from="1603183143352" duration="9929000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="320022000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24939272" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35523978" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32936078" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.19182949" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32936078" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info active="true" anchor="right" id="SciView" order="3" visible="true" weight="0.22186235" />
+      <window_info anchor="right" id="R Graphics" order="4" />
+      <window_info anchor="right" id="R Packages" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15618336" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.38353196" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32936078" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32936078" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32936078" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info active="true" anchor="right" id="SciView" order="3" visible="true" weight="0.22014925" />
+      <window_info anchor="right" id="R Graphics" order="4" />
+      <window_info anchor="right" id="R Packages" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="708" y="237" width="558" height="636" key="FileChooserDialogImpl" timestamp="1584414707198">
+      <screen x="65" y="33" width="1855" height="1047" />
+    </state>
+    <state x="708" y="237" width="558" height="636" key="FileChooserDialogImpl/65.33.1855.1047/1920.0.1920.1080@65.33.1855.1047" timestamp="1584414707198" />
+    <state width="1799" height="373" key="GridCell.Tab.0.bottom" timestamp="1584414711503">
+      <screen x="65" y="33" width="1855" height="1047" />
+    </state>
+    <state width="1799" height="373" key="GridCell.Tab.0.bottom/65.33.1855.1047/1920.0.1920.1080@65.33.1855.1047" timestamp="1584414711503" />
+    <state width="1799" height="373" key="GridCell.Tab.0.center" timestamp="1584414711503">
+      <screen x="65" y="33" width="1855" height="1047" />
+    </state>
+    <state width="1799" height="373" key="GridCell.Tab.0.center/65.33.1855.1047/1920.0.1920.1080@65.33.1855.1047" timestamp="1584414711503" />
+    <state width="1799" height="373" key="GridCell.Tab.0.left" timestamp="1584414711503">
+      <screen x="65" y="33" width="1855" height="1047" />
+    </state>
+    <state width="1799" height="373" key="GridCell.Tab.0.left/65.33.1855.1047/1920.0.1920.1080@65.33.1855.1047" timestamp="1584414711503" />
+    <state width="1799" height="373" key="GridCell.Tab.0.right" timestamp="1584414711503">
+      <screen x="65" y="33" width="1855" height="1047" />
+    </state>
+    <state width="1799" height="373" key="GridCell.Tab.0.right/65.33.1855.1047/1920.0.1920.1080@65.33.1855.1047" timestamp="1584414711503" />
+    <state x="358" y="103" key="SettingsEditor" timestamp="1584321478730">
+      <screen x="65" y="33" width="1855" height="1047" />
+    </state>
+    <state x="358" y="103" key="SettingsEditor/65.33.1855.1047/1920.0.1920.1080@65.33.1855.1047" timestamp="1584321478730" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/RepNet_MDP$Main.coverage" NAME="Main Coverage Results" MODIFIED="1584412772451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/CSVLoader.py" />
+    <entry file="file://$PROJECT_DIR$/MDPParametersCopy.py" />
+    <entry file="file://$PROJECT_DIR$/MDPParametersVTOL.py" />
+    <entry file="file://$USER_HOME$/Downloads/MDPParametersVTOL4agentsTravel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MDPParametersVTOL3agents2helipads.py" />
+    <entry file="file://$PROJECT_DIR$/CSV/tradeABimgAB.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSV/tradeABimgBA.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSV/tradeABrefuse2.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSV/tradeABrefuse3.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSV/tradeABrepB.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSV/tradeABrepA.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSV/tradeABfreq.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSV/vtol2timespent.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSV/vtol2crashesmdp.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSV/vtol2timespentmdp.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSV/vtol2crashes.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSV/vtol2timespentright.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSV/vtol2timespentrightmdp.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MDPParametersVTOL2agents1helipad.py" />
+    <entry file="file://$PROJECT_DIR$/CSV/tradeABCrepB.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSV/tradeABCrepC.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSV/tradeABCacceptC.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="-234" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSV/vtol4wins.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSV/vtol4crashes.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MDPParametersVTOL4agentsTravel.py" />
+    <entry file="file://$PROJECT_DIR$/MDPParameters-AgentABTrade.py" />
+    <entry file="file://$PROJECT_DIR$/MDPParameters-AgentABCTrade.py" />
+    <entry file="file://$PROJECT_DIR$/CSV/tradeABQ.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSV/tradeABCQ.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="-20" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MDPParameters-AgentABTradeNewVersion.py" />
+    <entry file="file://$PROJECT_DIR$/MDPParameters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5508">
+          <caret line="324" column="88" selection-start-line="324" selection-start-column="88" selection-end-line="324" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Experiments/Test.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Experiments/MDPParameters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MDPTree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Oracle2Agents.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="7" selection-end-column="52" />
+          <folding>
+            <element signature="e#264#413#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Oracle3Agents.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QLearner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RepNetAgent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="89" selection-start-line="10" selection-start-column="89" selection-end-line="10" selection-end-column="89" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RepNetTree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MDPAgent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="6" selection-start-line="8" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/System.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Agent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="68" lean-forward="true" selection-start-line="2" selection-start-column="68" selection-end-line="2" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../RepNet-MDP_Thesis/RepNet-MDP/RepNetMDP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="168" column="40" lean-forward="true" selection-start-line="142" selection-start-column="7" selection-end-line="168" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSV/tradeABaccept2.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="211">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSV/tradeABCacceptB.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="160">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSV/tradeABaccept3.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="-993" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSV/tradeABCactiontaken.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="-231">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OnlineSolver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="72" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#3616#3810#0" />
+            <element signature="e#3855#5543#0" />
+            <element signature="e#5741#7782#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Experiments/Trade3Agents.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="159" selection-start-line="5" selection-start-column="159" selection-end-line="5" selection-end-column="159" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Experiments/Trade2Agents.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="159" selection-start-line="5" selection-start-column="159" selection-end-line="5" selection-end-column="159" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
